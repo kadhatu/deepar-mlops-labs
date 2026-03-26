@@ -1,0 +1,17 @@
+{
+  "name": "DeepAR MLOps Lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9", // 基础镜像：Python 3.9
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {} // 开启 Docker-in-Docker
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python", // Python 插件
+        "ms-toolsai.jupyter", // Jupyter 插件
+        "ms-azuretools.vscode-docker" // Docker 管理插件
+      ]
+    }
+  },
+  "postCreateCommand": "pip3 install --user -r requirements.txt" // 启动后自动运行安装命令
+}

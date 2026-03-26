@@ -1,0 +1,14 @@
+# 深度学习核心
+torch
+gluonts[torch]  # 安装 GluonTS 并指定 PyTorch 后端
+numpy
+pandas
+
+# MLOps 工具
+mlflow
+scikit-learn
+
+# 数据处理与可视化
+matplotlib
+seaborn
+jupyter
